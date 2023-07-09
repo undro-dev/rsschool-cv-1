@@ -1,1 +1,1 @@
-# rsschool-cv
+https://vitali-undro.github.io/rsschool-cv/
