@@ -1,0 +1,270 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;500;600;700;800;900&display=swap');
+html {
+	scroll-behavior: smooth;
+}
+:root {
+	--main-font: 'Nunito', sans-serif;
+	--color-grey: #828282;
+	--color-black: #070707;
+	--bg-white: #ffffff;
+	--bg-grey: #f6f6f6;
+}
+#about,
+#skills {
+	background-color: var(--bg-grey);
+}
+
+.about__title,
+.education__title,
+.skills__title,
+.portfolio__title {
+	font-size: 34px;
+	line-height: 42px;
+	font-weight: 700;
+	font-family: var(--main-font);
+	text-align: center;
+	margin-bottom: 10px;
+}
+.container {
+	margin: 0 auto;
+	max-width: 960px;
+}
+
+.container--page-header {
+	border-bottom: 1px solid #828282;
+}
+
+.menu ul {
+	padding-left: 0;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+.menu__item {
+	list-style: none;
+	font-family: var(--main-font);
+	font-size: 18px;
+	font-weight: 700;
+}
+.menu__item a {
+	text-decoration: none;
+	transition: all 0.3s;
+	color: var(--color-grey);
+}
+.menu__item:first-child a {
+	color: var(--color-black);
+}
+.menu__item:hover a {
+	color: var(--color-black);
+}
+
+.container--general-info {
+	padding-top: 40px;
+	padding-bottom: 105px;
+}
+
+.information {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	font-family: var(--main-font);
+	color: var(--color-black);
+}
+
+.information__fullName {
+	width: 123px;
+}
+.information__name {
+	font-size: 48px;
+	line-height: 59px;
+}
+.information__general {
+	font-size: 18px;
+	line-height: 22px;
+	font-weight: 400;
+}
+
+.language {
+	display: inline-flex;
+	column-gap: 5px;
+	transform: rotate(-90deg);
+}
+.language__btn {
+	background: none;
+	border: none;
+	color: var(--color-grey);
+	font-size: 18px;
+	font-weight: 700;
+	cursor: pointer;
+}
+.language__btn.active {
+	color: var(--color-black);
+}
+.language__separator {
+	background-color: var(--color-black);
+	width: 2px;
+}
+.main-photo {
+	margin-top: 30px;
+}
+
+.main-photo__img {
+	width: 100%;
+	filter: grayscale(1);
+	transition: 1s;
+}
+
+.main-photo__img:hover {
+	filter: grayscale(0);
+}
+
+.container--about {
+	font-family: var(--main-font);
+	color: var(--color-black);
+	text-align: center;
+	padding: 50px 200px;
+}
+
+.about-txt {
+	font-size: 18px;
+	line-height: 22px;
+}
+.container--education {
+	padding: 50px 30px;
+}
+.education-cards,
+.portfolio-cards {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	grid-gap: 1rem;
+}
+.card-item {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	row-gap: 20px;
+	padding: 5px;
+	transition: 1s;
+}
+.card-item__img {
+	width: 80%;
+	height: 206px;
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+	transition: all 0.7s;
+	border-radius: 10px;
+}
+.card-item:hover .card-item__img {
+	transform: scale(1.1);
+	border-radius: 20px;
+}
+.card-item__img--rs {
+	background-image: url('./images/education/RS.jpg');
+}
+.card-item__img--food {
+	background-image: url('./images/portfolio/food.jpg');
+}
+.card-item__img--plants {
+	background-image: url('./images/portfolio/plants.jpg');
+}
+.card-item__img--movies {
+	background-image: url('./images/portfolio/movies.jpg');
+}
+.card-item__img--udemy {
+	background-image: url('./images/education/udemy.jpg');
+}
+.card-item__img--academy {
+	background-image: url('./images/education/logo-it-academy.png');
+}
+.card-item__description {
+	font-family: var(--main-font);
+	font-weight: 700;
+	text-align: center;
+}
+.container--skills {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding-top: 50px;
+	padding-bottom: 50px;
+}
+
+.slider {
+	width: 50%;
+	height: 250px;
+	margin: 20px auto;
+	overflow: hidden;
+}
+.slider-cards {
+	display: flex;
+	height: 100%;
+	transition: all ease 1s;
+}
+
+.slider-cards__item__img {
+	width: 100%;
+	height: 100%;
+}
+.skills-btn-controls {
+	width: 50%;
+	display: flex;
+	justify-content: space-around;
+}
+.skills-btn-controls button {
+	width: 150px;
+	height: 51px;
+	border-radius: 20px;
+	border: none;
+	cursor: pointer;
+	transition: all ease 0.3s;
+}
+
+.skills-btn-controls button:hover {
+	background-color: var(--color-black);
+	color: var(--bg-white);
+}
+.footer__body {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding-bottom: 100px;
+}
+.footer__school {
+	width: 250px;
+	height: 100px;
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+	background-image: url('./images/footer/rs.jpg');
+	border-radius: 10px;
+}
+.footer__contacts {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	column-gap: 5px;
+}
+.footer__contacts--item {
+	width: 50px;
+	height: 50px;
+}
+.footer__contacts--telegram {
+	background-image: url('./images/footer/telegram.svg');
+	background-size: cover;
+}
+.footer__contacts--link {
+	background-image: url('./images/footer/linkedin.svg');
+	background-size: cover;
+}
+
+.footer__git {
+	display: flex;
+	align-items: center;
+	column-gap: 5px;
+	font-size: 14px;
+	font-family: var(--main-font);
+	text-align: center;
+}
+.footer__git a {
+	text-decoration: none;
+	color: var(--color-black);
+}
